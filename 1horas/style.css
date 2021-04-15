@@ -1,0 +1,46 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#tempo{
+  font-family: 
+
+}
+
+/* Telefones em paisagem e abaixo */
+@media (max-width: 480px) { 
+  div{
+    font-size: 100px;
+    }
+ }
+
+/* Telefones em paisagem a tablet em retrato */
+@media (max-width: 767px) {
+  div{
+     font-size: 150px;
+  }
+}
+
+/* Tablet em retrato a paisagem e desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  div{
+   font-size: 200px;
+  }
+}
+
+/* Desktop grande */
+@media (min-width: 1200px) {
+  div{
+    font-size: 340px;
+  }
+}
