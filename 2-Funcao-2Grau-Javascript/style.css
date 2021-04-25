@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+html, body {
+    height: 100%;
+    
+}
+
+html {
+    display: table;
+    margin: auto;
+    
+}
+
+body {
+    display: table-cell;
+    vertical-align:middle;
+}
+
+#entradas{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  height: 8%;
+  padding-top: 3%;
+  
+}
+
+label{
+    margin-left: 3%;
+
+}
+button{
+    width: 8%;
+    height: 40%;
+    border: 2px solid #43B0F1;
+    background-color: white;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #43B0F1;
+    text-transform: uppercase;
+    color: white;
+    
+}
+
+input{
+    width: 12%;
+    margin-right: 10%;
+    margin-left: 2%;
+    height: 30px;
+    border-radius: 5px;
+    outline-color: #43B0F1;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+
+#resultado{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    justify-content: center;
+    
+    
+}
+
+#parabola-cima{
+    width:50px; height:50px;  
+    border:solid;
+    border-color:transparent #000 #000 #000;
+    border-radius: 0 0 100px 100px;
+    margin-left: 200px;
+    
+  }
+
+  #parabola-baixo{
+    width:50px; height:50px;  
+    border:solid;
+    border-color:transparent #000 #000 #000 ;
+    border-radius: 0 0 100px 100px;
+    transform: rotate(180deg);
+    margin-left: 30px;
+  }
+
+  .resultado-box{
+      width: 100%;
+      text-align: center;
+      border: 1px solid #6B6B6B;
+      border-radius: 5px;
+      padding-bottom: 5%;
+      margin: 0.5%;
+  }
+
+ #box-parabolas{
+
+    display: flex; 
+    flex-direction: row;
+    
+ }
+
+  .funcionalidades-dd, .raizes-dd,  .pontos-dd, .parabola-dd, .comincomp-dd{
+      display: none;
+  }
+
+  #funcionalidades-dt, #raizes-dt, #pontos-dt, #parabola-dt, #comincomp-dt{
+      cursor: pointer;
+  }
+
+  /*#funcionalidades-dt:hover, #raizes-dt:hover, #pontos-dt:hover, #parabola-dt:hover, #comincomp-dt:hover{
+
+    
+
+  }*/
+
+  .slide-fwd-center {
+      display: list-item;
+      list-style: none;
+      -webkit-animation: slide-right 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      animation: slide-right 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+h2, h3{
+
+    font-family: 'Roboto Slab', serif;
+}
+p, dt, dl, dd, label, button{
+    font-family: 'Roboto Mono', monospace;
+}
+
+#entradas{
+    width: 100%;
+    background-color:#E8EEF1 ;
+    border-radius: 10px;
+}
+
+dt{
+    width: 100%;
+    background-color: #F5F5F5;
+    font-weight: bold;
+    border-radius: 5px;
+}
+dt:hover{
+    color: white;
+    background-color: #6B6B6B;
+}
+
+dd:nth-child(odd){
+    background-color: #D6E1EB;
+    width: 96%;
+    border: 1px solid white;
+    border-radius: 5px;
+
+}
+dd:nth-child(even){
+    background-color: #DEDEDE;
+    width: 96%;
+    border: 1px solid white;
+    border-radius: 5px;
+
+}
+
+
+
+/* Telefones em paisagem e abaixo */
+@media (max-width: 480px) { 
+    /* estilos aqui */
+    #resultado{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+        justify-content: center;
+        
+        
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #entradas{
+        display: flex;
+        flex-direction: row;
+        height: 10%;
+        background-color: white;
+        
+      }
+   
+    
+    button{
+        width: 100%;
+        text-align: center;
+
+    }
+    input{
+        width: 80%;
+    }
+    #resultado{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20%;
+        justify-content: center;
+        
+        
+    }
+    
+}
+
+/* Telefones em paisagem a tablet em retrato */
+@media (max-width: 767px) {
+    /* estilos aqui */
+}
+
+/* Tablet em retrato a paisagem e desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+    /* estilos aqui */
+}
+
+/* Desktop grande */
+@media (min-width: 1200px) {
+   /* estilos aqui */
+}
+
+

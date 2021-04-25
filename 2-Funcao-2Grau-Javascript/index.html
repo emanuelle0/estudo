@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Função de 2º Grau</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>Calculadora de Função Quadrática</h1>
+      <dl>
+        <dt id="funcionalidades-dt" onclick="mostrarLista(0)">Funcionalidades</dt>
+        <dd class="funcionalidades-dd">O programa é capaz de calcular as raízes da função, pontos mínimos e máximos e a direção da concavidade da parábola.</dd>
+      
+        <dt id="raizes-dt" onclick="mostrarLista(1)">Raízes</dt>
+        <dd class="raizes-dd">Para cacular as raízes digite abaixo os elementos A,B e C.</dd>
+        <dd class="raizes-dd">Caso B ou C seja 0 basta deixar em branco.</dd>
+        <dd class="raizes-dd">Caso o número seja negativo escreva "-" antes do número.</dd>
+        <dd class="raizes-dd">O programa calcula as raízes utilizando a fórmula de <a href="https://brasilescola.uol.com.br/matematica/formula-bhaskara.htm" target="_blank"> Bhaskara</a>.</dd>
+
+        <dt id="pontos-dt" onclick="mostrarLista(2)">Pontos Máximo e Mínimos</dt>
+        <dd class="pontos-dd"> O ponto máximo é igual (-(b/2a)) quando a < 0.</dd>
+        <dd class="pontos-dd">O ponto de mínima é igual a (-(delta/4a)) quando a > 0.</dd>
+
+        <dt id="parabola-dt" onclick="mostrarLista(3)">Parábola</dt>
+        <dd class="parabola-dd">A parábola terá sua concavidade para baixo quando a < 0. </dd>
+        <dd class="parabola-dd">A parábola terá sua concavidade para baixo quando a > 0. </dd>
+       
+        <dt id="comincomp-dt" onclick="mostrarLista(4)">Completa ou Incompleta</dt>
+        <dd class="comincomp-dd">Se B e C diferente de zero (0), a função é Completa. </dd>
+        <dd class="comincomp-dd">Se B ou C igual a zero (0), a função é Incompleta.</dd>
+        </dl>
+      
+    </header>
+
+
+    <div id="entradas">
+      
+        <label for="adeX" >A</label>
+        <input type="number" name="adeX" id="adeX" value="0">
+        <label for="bdeX" >B</label>
+        <input type="number" name="bdeX" id="bdeX" value="0">
+        <label for="cdeX" >C</label>
+        <input type="number" name="cdeX" id="cdeX" value="0">
+        
+        <button onclick="telaResultadoCalculo2Grau()" >Calcular</button>
+      
+    </div>
+    <div id="resultado">
+
+      <div class="row">
+      <div class="resultado-box" >
+        <h3>Raízes x' e x''</h3>
+      <p id="resultado-raizes"></p>
+      </div>
+
+      <div class="resultado-box" id="parabola-box">
+      <h3>Concavidade da Parábola</h3>
+      <div id="box-parabolas">
+      <div id="cima"><div id="parabola-cima"></div></div>
+      <div id="baixo"><div id="parabola-baixo"></div></div>
+      </div>
+      </div>
+
+    </div>
+    <div class = "row">
+      <div class="resultado-box">
+        <h3>Vértices ponto_máximo e ponto_mínimo</h3>
+        <p id="resultado-maxmin"></p>
+      </div>
+
+      <div class="resultado-box">
+        <h3>Função Completa ou Incompleta</h3>
+        <p id="resultado-comincom"></p>
+      </div>
+
+    </div>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+
+  <footer>Made by: emanuelle04 </footer>
+</html>
