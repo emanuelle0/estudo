@@ -10,7 +10,7 @@
     <header>
       <h1>Calculadora de Função Quadrática</h1>
       <dl>
-        <dt id="funcionalidades-dt" onclick="mostrarLista(0)">Funcionalidades</dt>
+        <dt id="funcionalidades-dt" >Funcionalidades</dt>
         <dd class="funcionalidades-dd">O programa é capaz de calcular as raízes da função, pontos mínimos e máximos e a direção da concavidade da parábola.</dd>
       
         <dt id="raizes-dt" onclick="mostrarLista(1)">Raízes</dt>
@@ -36,17 +36,18 @@
 
 
     <div id="entradas">
-      
-        <label for="adeX" >A</label>
+        <label for="adeX">A</label>
         <input type="number" name="adeX" id="adeX" value="0">
+
         <label for="bdeX" >B</label>
         <input type="number" name="bdeX" id="bdeX" value="0">
         <label for="cdeX" >C</label>
         <input type="number" name="cdeX" id="cdeX" value="0">
+      <button onclick="telaResultadoCalculo2Grau()" >Calcular</button>
         
-        <button onclick="telaResultadoCalculo2Grau()" >Calcular</button>
       
     </div>
+   
     <div id="resultado">
 
       <div class="row">
@@ -58,8 +59,8 @@
       <div class="resultado-box" id="parabola-box">
       <h3>Concavidade da Parábola</h3>
       <div id="box-parabolas">
-      <div id="cima"><div id="parabola-cima"></div></div>
-      <div id="baixo"><div id="parabola-baixo"></div></div>
+      
+      <div id="baixo"></div>
       </div>
       </div>
 
@@ -81,5 +82,5 @@
     <script src="script.js"></script>
   </body>
 
-  <footer>Made by: emanuelle04 </footer>
+  <footer>Made by: <a href="https://github.com/emanuelle04" target="_blank">emanuelle04 </a></footer>
 </html>

@@ -50,9 +50,8 @@ function calcular2Grau(){//Calcula os X's da função
 
 function parabola(){//Destaca a horientação da parabola de acordo com o valor de A.
   var a = document.getElementById('adeX').value;
-  var cima = document.getElementById('cima');
   var baixo = document.getElementById('baixo');
-  a >0? cima.style.backgroundColor = "blue": baixo.style.backgroundColor ="blue";
+  a <0? baixo.innerHTML= "<p>A negativo, logo: </p><div id='parabola-cima'></div>": baixo.innerHTML="<p>A positivo, logo:</p><div id='parabola-baixo'></div>";
   
 }
 
