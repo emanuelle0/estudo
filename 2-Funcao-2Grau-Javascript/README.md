@@ -5,7 +5,7 @@
 - Definir direção da concavidade da parábola;
 - Indicar função completa ou incompleta.
 
-![](/Preview-Preview-2GrauCalculator.gif)
+![](/Preview-2GrauCalculator.gif)
 
 ## Conceitos
 ### Javascript
