@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>Buscador Múltiplo</title>
+    </head>
+    <body>
+        <div id="main">
+        <h1 id="yoursearch">Buscador Múltiplo</h1>
+        </div>
+
+        <div class="searcher w3-panel w3-container">
+        <div class="w3-card-4">
+            <header class="w3-container">
+                <h1>Google</h1>
+            </header>
+            <form action="https://www.google.com.br/search" class="card-searcher" target="_blank">
+                <input type="text" name="q" id="input-google">
+                <div class="double-search">
+                <input type="submit" value="Google Search" class="w3-button w3-white w3-border w3-round-large" id="google1">
+                <input type="submit" value="Google Images" class="w3-button w3-white w3-border w3-round-large" formaction="http://images.google.com/images">
+                </div>
+            </form>
+            <footer class="w3-container" id="footer-google">
+                <p>Redireciona para o buscador do Google.</p>
+            </footer>
+        </div>
+
+        <div class="w3-card-4">
+            <header class="w3-container">
+                <h1>Bing</h1>
+            </header>
+            <form action="https://www.bing.com/?cc=br" class="card-searcher" target="_blank">
+                <input type="text" name="q">
+                <input type="submit" value="Bing Search" class="w3-button  w3-border w3-round-large width-class">
+            </form>
+            <footer class="w3-container">
+                <p>Redireciona para o buscador do Bing.</p>
+            </footer>
+            
+        </div>
+
+        <div class="w3-card-4" >
+            <header class="w3-container">
+                <h1>Yahoo! Search</h1>
+            </header>
+            <form action="https://br.yahoo.com/" class="card-searcher" target="_blank">
+                <input type="text" name="q">
+                <input type="submit" value="Yahoo! Search" class="w3-button  w3-border w3-round-large width-class">
+            </form>
+            <footer class="w3-container">
+                <p>Redireciona para o buscador do Yahoo.</p>
+            </footer>
+            
+        </div>
+        </div>
+       
+        
+    
+    </body>
+</html>
